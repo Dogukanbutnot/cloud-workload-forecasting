@@ -1,0 +1,213 @@
+{
+  "n_holdout": 24,
+  "validation_fold_mae_damped_persistence": {
+    "min": 0.12893380250894837,
+    "mean": 0.19180472682550603,
+    "max": 0.3021910018397423
+  },
+  "targets": {
+    "active_vm_count": {
+      "submission": {
+        "mae": 0.0,
+        "rmse": 0.0,
+        "smape_pct": 0.0,
+        "bias": 0.0,
+        "mase": NaN,
+        "mae_ratio_vs_persistence": NaN,
+        "mae_ratio_vs_history_mean": NaN
+      },
+      "persistence": {
+        "mae": 0.0,
+        "rmse": 0.0,
+        "smape_pct": 0.0,
+        "bias": 0.0,
+        "mase": NaN
+      },
+      "history_mean": {
+        "mae": 0.0,
+        "rmse": 0.0,
+        "smape_pct": 0.0,
+        "bias": 0.0,
+        "mase": NaN
+      },
+      "details": {
+        "actual_mean": 10000.0,
+        "actual_min": 10000.0,
+        "actual_max": 10000.0,
+        "mae_by_band": {
+          "steps 1-6": {
+            "submission": 0.0,
+            "persistence": 0.0,
+            "history_mean": 0.0
+          },
+          "steps 7-12": {
+            "submission": 0.0,
+            "persistence": 0.0,
+            "history_mean": 0.0
+          },
+          "steps 13-24": {
+            "submission": 0.0,
+            "persistence": 0.0,
+            "history_mean": 0.0
+          }
+        },
+        "largest_errors": [
+          {
+            "timestamp": 33000,
+            "step": 1,
+            "actual": 10000.0,
+            "forecast": 10000.0,
+            "error": 0.0
+          },
+          {
+            "timestamp": 33300,
+            "step": 2,
+            "actual": 10000.0,
+            "forecast": 10000.0,
+            "error": 0.0
+          },
+          {
+            "timestamp": 33600,
+            "step": 3,
+            "actual": 10000.0,
+            "forecast": 10000.0,
+            "error": 0.0
+          }
+        ]
+      }
+    },
+    "aggregate_cpu_utilization": {
+      "submission": {
+        "mae": 0.1054868280768313,
+        "rmse": 0.12900143279897544,
+        "smape_pct": 1.137677458213275,
+        "bias": 0.058990600070240484,
+        "mase": 0.8709492656011016,
+        "mae_ratio_vs_persistence": 0.718660994558811,
+        "mae_ratio_vs_history_mean": 0.6041964679631983
+      },
+      "persistence": {
+        "mae": 0.14678245915042334,
+        "rmse": 0.18478539074333672,
+        "smape_pct": 1.5850535267466996,
+        "bias": -0.1044315580662661,
+        "mase": 1.2119055746663712
+      },
+      "history_mean": {
+        "mae": 0.1745902759617862,
+        "rmse": 0.21046157286396616,
+        "smape_pct": 1.8772657146037623,
+        "bias": 0.14510128648759393,
+        "mase": 1.4415000943933876
+      },
+      "details": {
+        "actual_mean": 9.268987733051413,
+        "actual_min": 8.983613452960672,
+        "actual_max": 9.63599020869164,
+        "mae_by_band": {
+          "steps 1-6": {
+            "submission": 0.14764006940982868,
+            "persistence": 0.10340327250434396,
+            "history_mean": 0.31529995590736287
+          },
+          "steps 7-12": {
+            "submission": 0.08482436576069219,
+            "persistence": 0.07173689104432679,
+            "history_mean": 0.17802917398831544
+          },
+          "steps 13-24": {
+            "submission": 0.09474143856840216,
+            "persistence": 0.20599483652651132,
+            "history_mean": 0.1025159869757332
+          }
+        },
+        "largest_errors": [
+          {
+            "timestamp": 37500,
+            "step": 16,
+            "actual": 9.63599020869164,
+            "forecast": 9.367850079665017,
+            "error": -0.268140129026623
+          },
+          {
+            "timestamp": 34500,
+            "step": 6,
+            "actual": 9.046337215954994,
+            "forecast": 9.28147703509646,
+            "error": 0.23513981914146598
+          },
+          {
+            "timestamp": 33300,
+            "step": 2,
+            "actual": 8.983613452960672,
+            "forecast": 9.21196741545038,
+            "error": 0.22835396248970774
+          }
+        ],
+        "peak_threshold_from_training_p90": 9.668361517488389,
+        "n_peak_points": 0,
+        "top_quartile_of_holdout_mae": {
+          "submission": 0.08845765444521092,
+          "persistence": 0.3085108235022445,
+          "history_mean": 0.05897797894838449
+        },
+        "policy": {
+          "quantile": 0.9,
+          "margin_by_band": {
+            "steps 1-6": 0.3039742918562353,
+            "steps 7-12": 0.41683107387116997,
+            "steps 13-24": 0.2439048348276527
+          },
+          "holdout_with_margin": {
+            "mean_margin": 0.3021537588456777,
+            "under_rate": 0.041666666666666664,
+            "mean_shortfall_when_under": 0.02423529419897008,
+            "mean_surplus": 0.36215416284087554,
+            "n": 24
+          },
+          "holdout_without_margin": {
+            "mean_margin": 0.0,
+            "under_rate": 0.3333333333333333,
+            "mean_shortfall_when_under": 0.06974434200988622,
+            "mean_surplus": 0.08223871407353589,
+            "n": 24
+          },
+          "training_folds_tradeoff": [
+            {
+              "quantile": 0.5,
+              "mean_margin": 0.0,
+              "under_rate": 0.35119047619047616,
+              "mean_shortfall_when_under": 0.24701193225733062,
+              "mean_surplus": 0.10505648871132443,
+              "n": 168
+            },
+            {
+              "quantile": 0.8,
+              "mean_margin": 0.19985922825182836,
+              "under_rate": 0.20833333333333334,
+              "mean_shortfall_when_under": 0.13255900615236285,
+              "mean_surplus": 0.24578393846404697,
+              "n": 168
+            },
+            {
+              "quantile": 0.9,
+              "mean_margin": 0.3021537588456777,
+              "under_rate": 0.1130952380952381,
+              "mean_shortfall_when_under": 0.10238199123297813,
+              "mean_surplus": 0.33204092511797906,
+              "n": 168
+            },
+            {
+              "quantile": 0.95,
+              "mean_margin": 0.40437288184144676,
+              "under_rate": 0.06547619047619048,
+              "mean_shortfall_when_under": 0.05413421513056204,
+              "mean_surplus": 0.4262256346197575,
+              "n": 168
+            }
+          ]
+        }
+      }
+    }
+  }
+}

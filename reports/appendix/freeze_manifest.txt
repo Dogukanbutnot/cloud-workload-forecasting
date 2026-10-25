@@ -1,0 +1,10 @@
+FREEZE MANIFEST (written BEFORE the holdout was revealed)
+utc: 2026-10-24T16:48:29Z
+predictions.csv sha256: 43200a238f69ee66ac20b776e82eb6be20ac1678620370b7d226291b550603a3
+src/cwfc tree sha256 : fef0950f159358c6ee8baa920a73281b738a5e729b55c11c5b887ee4ec7bfa63  (all modules except evaluate_holdout.py)
+tests passing        : 170 passed in 5.43s
+
+NOTE (added afterwards): the holdout was revealed once, after this manifest was written.
+Later edits outside the modelling path: src/cwfc/predict.py (--data may be the readings file) and
+src/cwfc/eda.py (Spearman without scipy). The predictions.csv hash above is unchanged and was re-verified on
+a clean checkout (fresh virtualenv), so the source-tree hash above no longer matches the final tree by design.
